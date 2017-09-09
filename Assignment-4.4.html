@@ -1,0 +1,49 @@
+<html><!-- Head of the Root -->
+	<head><!-- child sub root of the html tag as head tag  -->
+	<!-- it is a title tag -->
+	<title>Animation</title>
+		<!-- it is a style tag -->
+		<style>
+			/*image border and animation details*/
+			img 
+                {            
+                border:5px solid;
+                border-radius: 50px;
+                width: 250px;
+    			height: 200px;
+                position: relative;
+    	-webkit-animation-name: mymove;
+    	-webkit-animation-duration: 5s;
+    	-webkit-animation-iteration-count: infinite;
+    			animation-name: mymove;
+    			animation-duration: 5s;
+    			animation-iteration-count: infinite;
+    	-webkit-animation-timing-function: ease-in;
+    			}
+                
+			/*animation move syntax*/
+			@-webkit-keyframes mymove 
+				{
+    			from {left: 0px;}
+    			to {left: 500px;}
+				}
+
+			/*syntax*/
+            @keyframes mymove 
+				{
+   	 			from {left: 0px;}
+    			to {left: 500px;}
+				}
+			
+                
+        </style>
+	</head>
+	<body><!-- it is a body tag -->
+
+
+		<div><!-- it is a div tag -->
+			<img src="https://upload.wikimedia.org/wikipedia/en/1/17/Batman-BenAffleck.jpg">
+		</div>
+
+	</body>
+</html>
